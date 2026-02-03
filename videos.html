@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obu &ndash; Roblox Environment Videos</title>
+  <meta name="description" content="Curated Roblox environment and lighting videos by Obu: tutorials, showcases, and breakdowns." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="boot-screen" aria-hidden="true">
+    <div class="boot-grain"></div>
+    <div class="boot-vignette"></div>
+    <div class="boot-inner">
+      <p class="boot-line mono">Loading video library...</p>
+    </div>
+    <div class="boot-flash"></div>
+  </div>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand-block">
+        <div class="brand-mark">Obu</div>
+        <div class="brand-meta mono">Roblox Builder &amp; Game Developer</div>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#audio">Audio</a>
+        <a href="videos.html">Videos</a>
+        <a class="nav-cta" href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <section id="videos" class="panel videos-panel" aria-labelledby="videos-title">
+        <header class="panel-header">
+          <h1 id="videos-title">Videos</h1>
+          <p class="panel-kicker mono">Tutorials, showcases, breakdowns</p>
+        </header>
+        <p class="videos-intro">
+          A focused library of Roblox environment and lighting videos: how scenes are built, tuned, and optimized for live experiences.
+        </p>
+
+        <div class="video-grid" data-video-grid>
+          <article class="video-card"
+            data-vimeo-id="1160078674"
+            data-video-title="Stylized valley lighting pass"
+            data-video-description="Lighting-focused breakdown of a stylized valley scene: fog, volumetrics, and color balance."
+            data-video-category="Breakdown">
+            <button class="video-card-inner" type="button">
+              <div class="video-thumb" data-thumb-src="https://i.vimeocdn.com/video/123456789_640x360.jpg">
+                <span class="video-thumb-overlay mono">View</span>
+              </div>
+              <div class="video-card-body">
+                <span class="video-tag mono">Breakdown</span>
+                <h2>Stylized valley lighting pass</h2>
+                <p>Step-by-step pass over a valley scene focused on mood, readability, and performance.</p>
+              </div>
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer mono">
+      <span>&copy; <span id="year"></span> Obu.</span>
+      <span>Built like a system, not a feed.</span>
+    </footer>
+  </div>
+
+  <div class="video-modal-backdrop" data-video-modal hidden>
+    <div class="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+      <button class="video-modal-close mono" type="button">Close</button>
+      <div class="video-modal-body">
+        <div class="video-modal-frame" data-video-frame aria-label="Vimeo video player"></div>
+        <div class="video-modal-meta">
+          <h2 class="video-modal-title" id="video-modal-title"></h2>
+          <p class="video-modal-desc"></p>
+          <span class="video-modal-tag mono"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
