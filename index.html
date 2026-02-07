@@ -13,10 +13,10 @@
 
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-roblox-user-id="5217557356" data-roblox-username="Obus1n">
 	<!-- Global background video -->
 <div class="site-bg" aria-hidden="true">
-  <video class="site-bg-video" autoplay muted loop playsinline preload="auto">
+  <video class="site-bg-video" autoplay muted loop playsinline preload="metadata">
     <source src="videos/bg.mp4" type="video/mp4" />
   </video>
   <div class="site-bg-overlay"></div>
@@ -42,7 +42,7 @@
       <nav class="main-nav" aria-label="Primary">
         <a href="#projects">Projects</a>
         <a href="#audio">Audio</a>
-        <a href="videos.html">Videos</a>
+        <a href="#videos">Videos</a>
         <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </header>
@@ -50,27 +50,6 @@
     <main class="app-main">
       <!-- Hero -->
     <section id="hero" class="panel hero-panel" aria-labelledby="hero-title">
-
-  <!-- Hero background video -->
-  <div class="site-bg" aria-hidden="true">
-    <video
-      class="site-bg-video"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="metadata"
-    >
-      <source src="videos/bg.mp4" type="video/mp4" />
-    </video>
-    <div class="site-bg-overlay"></div>
-  </div>
-
-  <!-- EXISTING HERO CONTENT CONTINUES BELOW -->
-
-
-  <!-- existing hero content below -->
-
 
         <div class="hero-grid">
           <div class="hero-copy">
@@ -81,6 +60,11 @@
               My work blends realistic and stylized builds using proper lighting techniques, volumetric effects, reflections, and visual balance.
               I build with optimization in mind, making sure scenes look good while staying smooth in live experiences.
             </p>
+            <div class="hero-cta-group">
+              <a class="btn btn-primary" href="#contact">Hire / Commission</a>
+              <a class="btn btn-secondary" href="#projects">Play My Work</a>
+              <a class="btn btn-ghost" href="#videos">Watch Demos</a>
+            </div>
             <div class="hero-meta mono">
               <span>Focus: Environment building, lighting, and visual polish</span>
               <span>Tools: Roblox Studio, 3D assets, visual scripting</span>
@@ -90,7 +74,7 @@
           <aside class="hero-aside">
             <section class="profile-card" aria-label="Developer profile">
               <div class="profile-avatar">
-                <img src="imgs/Obusin PFP.png" alt="Obu Roblox avatar" />
+                <img src="imgs/Obusin PFP.png" alt="Obu Roblox avatar" loading="lazy" decoding="async" data-roblox-avatar />
               </div>
               <div class="profile-meta mono">
                 <span>Obu</span>
@@ -133,135 +117,255 @@
           <p class="panel-kicker mono">Examples of my builds</p>
         </header>
 
-        <div class="roblox-showcase" data-roblox-showcase>
-          <header class="roblox-showcase-header">
-            <p class="roblox-showcase-kicker mono">Roblox games showcase</p>
-            <h3>Shipped experiences &amp; studio spaces</h3>
+        <div class="roblox-showcase" data-roblox-showcase data-roblox-auto="true">
+          <header class="roblox-carousel-header">
+            <span class="section-pill mono">Featured Games</span>
+            <h3>Featured Games</h3>
             <p>
-              Selected Roblox experiences I've contributed to as a builder and lighting-focused environment artist.
+              Explore the Roblox games I've built and supported. Each card pulls live stats from Roblox.
             </p>
           </header>
 
-          <div class="roblox-showcase-grid">
-            <article
-              class="roblox-game-card"
-              data-roblox-game
-              data-place-id="116364124016048"
-              data-role="Builder - environments &amp; lighting"
-              data-game-url="https://www.roblox.com/games/116364124016048/Pigeon-Turf-Wars"
-            >
-              <div class="roblox-game-thumb" aria-hidden="true"></div>
-              <div class="roblox-game-body">
-                <p class="roblox-game-label mono">Live experience</p>
-                <h3 class="roblox-game-title">Pigeon Turf Wars</h3>
-                <p class="roblox-game-desc">
-                  Compact urban map with layered lighting, reflections, and clear reads for fast-paced turf battles.
-                </p>
-                <div class="roblox-game-meta mono">
-                  <span class="roblox-game-role">Role: Builder - environments &amp; lighting</span>
+          <div class="scroll-carousel" data-scroll-carousel>
+            <div class="scroll-carousel-track" data-scroll-track>
+              <article
+                class="roblox-game-card roblox-game-card--carousel"
+                data-roblox-game
+                data-place-id="116364124016048"
+                data-role="Builder - environments &amp; lighting"
+                data-game-url="https://www.roblox.com/games/116364124016048/Pigeon-Turf-Wars"
+              >
+                <div class="roblox-game-thumb" aria-hidden="true">
+                  <div class="roblox-game-badge mono">
+                    <span class="roblox-badge-dot"></span>
+                    <span data-roblox-playing-badge>--</span>
+                  </div>
+                  <span class="roblox-game-pill mono">Roblox Game</span>
                 </div>
-                <a
-                  class="roblox-game-cta mono"
-                  href="https://www.roblox.com/games/116364124016048/Pigeon-Turf-Wars"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  View on Roblox
-                </a>
-              </div>
-            </article>
+                <div class="roblox-game-body">
+                  <h3 class="roblox-game-title">Pigeon Turf Wars</h3>
+                  <p class="roblox-game-desc">
+                    Compact urban map with layered lighting, reflections, and clear reads for fast-paced turf battles.
+                  </p>
+                  <div class="roblox-game-meta mono">
+                    <span class="roblox-game-role">Role: Builder - environments &amp; lighting</span>
+                  </div>
+                  <div class="roblox-game-stats mono" data-roblox-stats>
+                    <span data-roblox-visits>Visits: --</span>
+                    <span data-roblox-playing>Playing: --</span>
+                    <span data-roblox-favorites>Favorites: --</span>
+                  </div>
+                  <a
+                    class="roblox-game-cta mono"
+                    href="https://www.roblox.com/games/116364124016048/Pigeon-Turf-Wars"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Play on Roblox
+                  </a>
+                </div>
+              </article>
 
-            <article
-              class="roblox-game-card"
-              data-roblox-game
-              data-place-id="98767500708906"
-              data-role="Builder - interiors &amp; lighting"
-              data-game-url="https://www.roblox.com/games/98767500708906/Club-Dezz-18"
-            >
-              <div class="roblox-game-thumb" aria-hidden="true"></div>
-              <div class="roblox-game-body">
-                <p class="roblox-game-label mono">Social club</p>
-                <h3 class="roblox-game-title">Club Dezz 18</h3>
-                <p class="roblox-game-desc">
-                  Atmospheric club interior with focused lighting, reflections, and silhouettes tuned for performance.
-                </p>
-                <div class="roblox-game-meta mono">
-                  <span class="roblox-game-role">Role: Builder - interiors &amp; lighting</span>
+              <article
+                class="roblox-game-card roblox-game-card--carousel"
+                data-roblox-game
+                data-place-id="98767500708906"
+                data-role="Builder - interiors &amp; lighting"
+                data-game-url="https://www.roblox.com/games/98767500708906/Club-Dezz-18"
+              >
+                <div class="roblox-game-thumb" aria-hidden="true">
+                  <div class="roblox-game-badge mono">
+                    <span class="roblox-badge-dot"></span>
+                    <span data-roblox-playing-badge>--</span>
+                  </div>
+                  <span class="roblox-game-pill mono">Roblox Game</span>
                 </div>
-                <a
-                  class="roblox-game-cta mono"
-                  href="https://www.roblox.com/games/98767500708906/Club-Dezz-18"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  View on Roblox
-                </a>
-              </div>
-            </article>
+                <div class="roblox-game-body">
+                  <h3 class="roblox-game-title">Club Dezz 18</h3>
+                  <p class="roblox-game-desc">
+                    Atmospheric club interior with focused lighting, reflections, and silhouettes tuned for performance.
+                  </p>
+                  <div class="roblox-game-meta mono">
+                    <span class="roblox-game-role">Role: Builder - interiors &amp; lighting</span>
+                  </div>
+                  <div class="roblox-game-stats mono" data-roblox-stats>
+                    <span data-roblox-visits>Visits: --</span>
+                    <span data-roblox-playing>Playing: --</span>
+                    <span data-roblox-favorites>Favorites: --</span>
+                  </div>
+                  <a
+                    class="roblox-game-cta mono"
+                    href="https://www.roblox.com/games/98767500708906/Club-Dezz-18"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Play on Roblox
+                  </a>
+                </div>
+              </article>
 
-            <article
-              class="roblox-game-card"
-              data-roblox-game
-              data-place-id="77222372421759"
-              data-role="Builder - environments &amp; atmosphere"
-              data-game-url="https://www.roblox.com/games/77222372421759/TK-Underground"
-            >
-              <div class="roblox-game-thumb" aria-hidden="true"></div>
-              <div class="roblox-game-body">
-                <p class="roblox-game-label mono">Underground space</p>
-                <h3 class="roblox-game-title">TK Underground</h3>
-                <p class="roblox-game-desc">
-                  Tightly framed underground environment with controlled contrast, fog, and guiding light sources.
-                </p>
-                <div class="roblox-game-meta mono">
-                  <span class="roblox-game-role">Role: Builder - environments &amp; atmosphere</span>
+              <article
+                class="roblox-game-card roblox-game-card--carousel"
+                data-roblox-game
+                data-place-id="77222372421759"
+                data-role="Builder - environments &amp; atmosphere"
+                data-game-url="https://www.roblox.com/games/77222372421759/TK-Underground"
+              >
+                <div class="roblox-game-thumb" aria-hidden="true">
+                  <div class="roblox-game-badge mono">
+                    <span class="roblox-badge-dot"></span>
+                    <span data-roblox-playing-badge>--</span>
+                  </div>
+                  <span class="roblox-game-pill mono">Roblox Game</span>
                 </div>
-                <a
-                  class="roblox-game-cta mono"
-                  href="https://www.roblox.com/games/77222372421759/TK-Underground"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  View on Roblox
-                </a>
-              </div>
-            </article>
+                <div class="roblox-game-body">
+                  <h3 class="roblox-game-title">TK Underground</h3>
+                  <p class="roblox-game-desc">
+                    Tightly framed underground environment with controlled contrast, fog, and guiding light sources.
+                  </p>
+                  <div class="roblox-game-meta mono">
+                    <span class="roblox-game-role">Role: Builder - environments &amp; atmosphere</span>
+                  </div>
+                  <div class="roblox-game-stats mono" data-roblox-stats>
+                    <span data-roblox-visits>Visits: --</span>
+                    <span data-roblox-playing>Playing: --</span>
+                    <span data-roblox-favorites>Favorites: --</span>
+                  </div>
+                  <a
+                    class="roblox-game-cta mono"
+                    href="https://www.roblox.com/games/77222372421759/TK-Underground"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Play on Roblox
+                  </a>
+                </div>
+              </article>
 
-            <article
-              class="roblox-game-card"
-              data-roblox-game
-              data-place-id="106614674097042"
-              data-role="Builder - rooftop &amp; skyline lighting"
-              data-game-url="https://www.roblox.com/games/106614674097042/Skyline-Club-17"
-            >
-              <div class="roblox-game-thumb" aria-hidden="true"></div>
-              <div class="roblox-game-body">
-                <p class="roblox-game-label mono">Skyline club</p>
-                <h3 class="roblox-game-title">Skyline Club 17</h3>
-                <p class="roblox-game-desc">
-                  Rooftop club space emphasizing skyline views, emissive accents, and clean silhouettes.
-                </p>
-                <div class="roblox-game-meta mono">
-                  <span class="roblox-game-role">Role: Builder - rooftop &amp; skyline lighting</span>
+              <article
+                class="roblox-game-card roblox-game-card--carousel"
+                data-roblox-game
+                data-place-id="106614674097042"
+                data-role="Builder - rooftop &amp; skyline lighting"
+                data-game-url="https://www.roblox.com/games/106614674097042/Skyline-Club-17"
+              >
+                <div class="roblox-game-thumb" aria-hidden="true">
+                  <div class="roblox-game-badge mono">
+                    <span class="roblox-badge-dot"></span>
+                    <span data-roblox-playing-badge>--</span>
+                  </div>
+                  <span class="roblox-game-pill mono">Roblox Game</span>
                 </div>
-                <a
-                  class="roblox-game-cta mono"
-                  href="https://www.roblox.com/games/106614674097042/Skyline-Club-17"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  View on Roblox
-                </a>
-              </div>
-            </article>
+                <div class="roblox-game-body">
+                  <h3 class="roblox-game-title">Skyline Club 17</h3>
+                  <p class="roblox-game-desc">
+                    Rooftop club space emphasizing skyline views, emissive accents, and clean silhouettes.
+                  </p>
+                  <div class="roblox-game-meta mono">
+                    <span class="roblox-game-role">Role: Builder - rooftop &amp; skyline lighting</span>
+                  </div>
+                  <div class="roblox-game-stats mono" data-roblox-stats>
+                    <span data-roblox-visits>Visits: --</span>
+                    <span data-roblox-playing>Playing: --</span>
+                    <span data-roblox-favorites>Favorites: --</span>
+                  </div>
+                  <a
+                    class="roblox-game-cta mono"
+                    href="https://www.roblox.com/games/106614674097042/Skyline-Club-17"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Play on Roblox
+                  </a>
+                </div>
+              </article>
+            </div>
           </div>
 
-          <p class="roblox-showcase-note mono">
-            Thumbnails are loaded from Roblox's public thumbnails API when this section enters view.
-          </p>
+          <div class="carousel-progress" data-carousel-progress>
+            <span class="carousel-progress-thumb" data-carousel-thumb></span>
+          </div>
         </div>
 
-        <div class="video-grid" data-video-grid>
+        <div class="roblox-showcase roblox-showcase--groups" data-roblox-groups data-roblox-auto="true">
+          <header class="roblox-carousel-header">
+            <span class="section-pill mono">Communities</span>
+            <h3>Roblox Groups</h3>
+            <p>
+              Join our communities to stay updated on new releases, exclusive content, and events.
+            </p>
+          </header>
+
+          <div class="scroll-carousel" data-scroll-carousel>
+            <div class="scroll-carousel-track" data-scroll-track>
+              <article
+                class="roblox-group-card"
+                data-roblox-group
+                data-group-id="0"
+                data-group-url="https://www.roblox.com/groups"
+              >
+                <div class="roblox-group-logo" aria-hidden="true"></div>
+                <div class="roblox-group-body">
+                  <h3 class="roblox-group-title">Your Group Name</h3>
+                  <p class="roblox-group-desc">Add your official Roblox group here.</p>
+                  <div class="roblox-group-meta mono">
+                    <span data-roblox-members>Members: --</span>
+                    <span class="roblox-group-role">Role: Founder</span>
+                  </div>
+                  <a class="roblox-group-cta mono" href="https://www.roblox.com/groups" target="_blank" rel="noreferrer noopener">
+                    View Group
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="roblox-group-card"
+                data-roblox-group
+                data-group-id="0"
+                data-group-url="https://www.roblox.com/groups"
+              >
+                <div class="roblox-group-logo" aria-hidden="true"></div>
+                <div class="roblox-group-body">
+                  <h3 class="roblox-group-title">Your Second Group</h3>
+                  <p class="roblox-group-desc">Replace this with another community.</p>
+                  <div class="roblox-group-meta mono">
+                    <span data-roblox-members>Members: --</span>
+                    <span class="roblox-group-role">Role: Project Manager</span>
+                  </div>
+                  <a class="roblox-group-cta mono" href="https://www.roblox.com/groups" target="_blank" rel="noreferrer noopener">
+                    View Group
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="roblox-group-card"
+                data-roblox-group
+                data-group-id="0"
+                data-group-url="https://www.roblox.com/groups"
+              >
+                <div class="roblox-group-logo" aria-hidden="true"></div>
+                <div class="roblox-group-body">
+                  <h3 class="roblox-group-title">Your Third Group</h3>
+                  <p class="roblox-group-desc">Swap in your real group ID to load icon + stats.</p>
+                  <div class="roblox-group-meta mono">
+                    <span data-roblox-members>Members: --</span>
+                    <span class="roblox-group-role">Role: Founder</span>
+                  </div>
+                  <a class="roblox-group-cta mono" href="https://www.roblox.com/groups" target="_blank" rel="noreferrer noopener">
+                    View Group
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-progress" data-carousel-progress>
+            <span class="carousel-progress-thumb" data-carousel-thumb></span>
+          </div>
+        </div>
+
+        <div id="videos" class="video-grid" data-video-grid>
           <article class="video-card"
             data-vimeo-id="1160078674"
             data-video-title="Stylized valley lighting pass"
@@ -367,6 +471,103 @@
         </div>
       </section>
 
+      <section id="proof" class="panel" aria-labelledby="proof-title">
+        <header class="panel-header">
+          <h2 id="proof-title">Proof of quality</h2>
+          <p class="panel-kicker mono">What I focus on in every build</p>
+        </header>
+        <div class="panel-grid proof-grid">
+          <article class="panel-block">
+            <h3>Performance / Optimization</h3>
+            <p>Scene layout, streaming strategy, and lighting choices tuned to keep experiences smooth.</p>
+            <ul class="mono project-meta">
+              <li>Clean part budgets</li>
+              <li>LOD-aware composition</li>
+              <li>Consistent frame pacing</li>
+            </ul>
+          </article>
+          <article class="panel-block">
+            <h3>Visual / Lighting Quality</h3>
+            <p>Lighting passes that control mood, readability, and depth while staying efficient.</p>
+            <ul class="mono project-meta">
+              <li>Volumetrics and fog balance</li>
+              <li>Readable silhouettes</li>
+              <li>Color grading intent</li>
+            </ul>
+          </article>
+          <article class="panel-block">
+            <h3>Team Impact</h3>
+            <p>Collaborative builds that align with design goals and help teams ship on time.</p>
+            <ul class="mono project-meta">
+              <li>Clear handoff notes</li>
+              <li>Consistent art direction</li>
+              <li>Game-ready polish</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="panel" aria-labelledby="process-title">
+        <header class="panel-header">
+          <h2 id="process-title">Build process</h2>
+          <p class="panel-kicker mono">How I take a scene to finish</p>
+        </header>
+        <div class="panel-grid process-grid">
+          <article class="pipeline-step">
+            <h3>Blockout &amp; layout</h3>
+            <p>Define player flow, camera reads, and proportions before heavy detailing.</p>
+          </article>
+          <article class="pipeline-step">
+            <h3>Lighting pass</h3>
+            <p>Establish mood, key light placement, and silhouette clarity.</p>
+          </article>
+          <article class="pipeline-step">
+            <h3>Material polish</h3>
+            <p>Refine reflections, color balance, and focal accents.</p>
+          </article>
+          <article class="pipeline-step">
+            <h3>Optimization</h3>
+            <p>Trim cost, validate performance targets, and prep for live play.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="panel" aria-labelledby="skills-title">
+        <header class="panel-header">
+          <h2 id="skills-title">Skills</h2>
+          <p class="panel-kicker mono">What I bring to a team</p>
+        </header>
+        <div class="panel-grid skills-grid">
+          <article class="panel-block">
+            <h3>Environment &amp; Layout</h3>
+            <p>Readable spaces, player flow, and strong focal composition.</p>
+            <ul class="mono project-meta">
+              <li>Scene composition</li>
+              <li>Scale and proportion</li>
+              <li>Traversal design</li>
+            </ul>
+          </article>
+          <article class="panel-block">
+            <h3>Lighting &amp; Atmosphere</h3>
+            <p>Mood-driven lighting with cinematic depth and clarity.</p>
+            <ul class="mono project-meta">
+              <li>Volumetrics</li>
+              <li>Color grading</li>
+              <li>Contrast control</li>
+            </ul>
+          </article>
+          <article class="panel-block">
+            <h3>Performance Support</h3>
+            <p>Optimization passes that keep visuals sharp and FPS stable.</p>
+            <ul class="mono project-meta">
+              <li>Streaming strategy</li>
+              <li>Budget planning</li>
+              <li>Playtest tuning</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
       <!-- Audio -->
       <section id="audio" class="panel audio-panel" aria-labelledby="audio-title">
         <header class="panel-header">
@@ -426,6 +627,6 @@
     </div>
   </div>
 
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
