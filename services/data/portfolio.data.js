@@ -6,6 +6,7 @@ const portfolioItems = {
   games: [
     {
       experienceId: 106614674097042,
+      universeId: 9409775844,
       title: "Skyline Club 17",
       role: "Project Manager",
       category: "Game",
@@ -19,7 +20,7 @@ const portfolioItems = {
     {
       experienceId: 98767500708906,
       title: "Club Dezz 18",
-      role: "Developer",
+      role: "Builder",
       category: "Game",
       description: "Atmospheric club interior with focused lighting, reflections, and silhouettes tuned for performance.",
       highlight: true,
@@ -31,12 +32,24 @@ const portfolioItems = {
     {
       experienceId: 77222372421759,
       title: "TK Underground",
-      role: "Lead Developer",
+      role: "Builder",
       category: "Game",
       description: "Tightly framed underground environment with controlled contrast, fog, and guiding light sources.",
       highlight: true,
       links: {
         roblox: "https://www.roblox.com/games/77222372421759/TK-Underground",
+        community: null,
+      },
+    },
+    {
+      experienceId: 97796831147627,
+      title: "My Anime Collection",
+      role: "Builder",
+      category: "Game",
+      description: "Anime collection experience with curated showcases and progression-driven systems.",
+      highlight: true,
+      links: {
+        roblox: "https://www.roblox.com/games/97796831147627/My-Anime-Collection",
         community: null,
       },
     },

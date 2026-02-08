@@ -23,6 +23,10 @@ app.get("/api/portfolio", async (req, res) => {
       .map((item) => item.experienceId)
       .filter((id) => typeof id === "number" && id > 0);
 
+    const universeIds = games
+      .map((item) => item.universeId)
+      .filter((id) => typeof id === "number" && id > 0);
+
     const groupIds = communities
       .map((item) => item.groupId)
       .filter((id) => typeof id === "number" && id > 0);
@@ -36,7 +40,7 @@ app.get("/api/portfolio", async (req, res) => {
     let userAvatar = { data: [] };
 
     try {
-      gamesData = await getGamesData(experienceIds);
+      gamesData = await getGamesData(universeIds);
     } catch (err) {
       // Keep fallback data
     }
@@ -108,8 +112,11 @@ app.get("/api/portfolio", async (req, res) => {
     }
 
     const enrichedGames = games.map((item) => {
+      const statsKey = item.universeId
+        ? String(item.universeId)
+        : String(item.experienceId);
       const key = String(item.experienceId);
-      const api = gameMap.get(key) || {};
+      const api = gameMap.get(statsKey) || {};
       return {
         ...item,
         title: api.name || item.title,
@@ -119,7 +126,7 @@ app.get("/api/portfolio", async (req, res) => {
           playing: api.playing ?? null,
         },
         image: thumbMap.get(key) || null,
-        universeId: api.universeId || api.id || api.experienceId || null,
+        universeId: api.universeId || api.id || api.experienceId || item.universeId || null,
       };
     });
 
