@@ -440,6 +440,12 @@ img {
   color: var(--text-secondary);
 }
 
+.trust-logo-image {
+  width: min(220px, 100%);
+  max-height: 44px;
+  object-fit: contain;
+}
+
 /* ==========================================================================
    6. HERO SECTION
    Main introduction area with profile card
